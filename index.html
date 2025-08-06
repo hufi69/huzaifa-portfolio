@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("wxbqJmH72lVf9m0FC");
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-text">
+            <div class="profile-image">
+                <img src="images/profile.jpg" alt="Muhammad Huzaifa" class="profile-pic">
+                <div class="status-indicator"></div>
+            </div>
+            <h1>MUHAMMAD HUZAIFA</h1>
+            <p>Computer Science Student | Aspiring App & Software Developer</p>
+            <p class="hero-summary">Being an undergrad at COMSATS University, I am self-driven and experienced in making mobile apps, web applications, and IoT related smart devices. I am skilled in making user interfaces using Android tools, linking to Firebase, and React.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>BS Computer Science</h3>
+                    <p>COMSATS University Islamabad, Lahore Campus</p>
+                    <p>Feb 2022 – Jan 2026 | CGPA: 2.91/4.00</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Intermediate</h3>
+                    <p>KIPS College</p>
+                    <p>2019-2021</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Matriculation</h3>
+                    <p>Unique High School</p>
+                    <p>2017-2019</p>
+                </div>
+            </div>
+            
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li><strong>Programming Languages:</strong> C, Python, Java (OOP)</li>
+                        <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript, React.js, Bootstrap</li>
+                        <li><strong>Databases:</strong> MySQL, Firebase (Realtime DB)</li>
+                        <li><strong>Mobile App Development:</strong> Android Studio, VSCode, UI Design, Firebase Integration</li>
+                        <li><strong>Computer Science:</strong> Data Structures & Algorithms, OOP</li>
+                        <li><strong>Tools & Platforms:</strong> Git, GitHub, VS Code</li>
+                        <li><strong>Emerging Tech:</strong> Prompt Engineering, AI Tools, YouTube Automation</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Additional Skills</h3>
+                    <ul>
+                        <li>Roblox Animation (Basic)</li>
+                        <li>Basic C# (.NET)</li>
+                        <li>Real-Time Sync</li>
+                        <li>Cross-device Responsiveness</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a full-stack developer passionate about building impactful digital experiences across web and mobile platforms. With expertise in Android development and cross-platform solutions, I create performant applications using modern tools like React Native, while maintaining robust backend systems. My work focuses on seamless user experiences across all device types.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>IoT-based Smart Switch</h3>
+                    <p>Mobile-controlled system using Android Studio & Firebase</p>
+                    <ul>
+                        <li>Real-time device state sync</li>
+                        <li>Customizable Android UI</li>
+                        <li>Energy optimization focus</li>
+                        <li>Firebase integration for authentication</li>
+                    </ul>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Airbnb + PakWheels Clone</h3>
+                    <p>Responsive UI clone using HTML, CSS, Bootstrap, and JavaScript</p>
+                    <ul>
+                        <li>Frontend design and layout structuring</li>
+                        <li>Cross-device responsiveness</li>
+                        <li>Modern UI/UX implementation</li>
+                        <li>Interactive components</li>
+                    </ul>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Car Management System</h3>
+                    <p>Car inventory system using PHP, MySQL, and XML</p>
+                    <ul>
+                        <li>Full CRUD operations</li>
+                        <li>Structured database connectivity</li>
+                        <li>Data management interface</li>
+                        <li>XML integration</li>
+                    </ul>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications & Activities</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>Actively seeking certifications in Mobile App Development and Cloud Tools</li>
+                        <li>Required Internship for the capstone certification projects</li>
+                    </ul>
+                </div>
+                <div class="cert-card">
+                    <h3>Activities</h3>
+                    <ul>
+                        <li>Attendee – TechTalks</li>
+                        <li>Open Source Contributor (Beginner) on GitHub</li>
+                        <li>Self-driven learner of Android Development, Firebase, and React</li>
+                    </ul>
+                </div>
+                <div class="cert-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li><strong>English:</strong> Professional Working Proficiency</li>
+                        <li><strong>Urdu:</strong> Native</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="form-status" class="form-status"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p>📞 +92 301 8171782</p>
+            <p>📧 huzaifaumer69@gmail.com</p>
+            <p>🏠 548 Block B, Johar Town, Lahore</p>
+            <p>🔗 <a href="https://www.linkedin.com/in/huzaifa-umar6">LinkedIn Profile</a></p>
+        </div>
+        <p>&copy; 2024 Muhammad Huzaifa. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
