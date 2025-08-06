@@ -92,3 +92,36 @@ document.querySelectorAll('.project-card').forEach(card => {
         this.style.transform = 'translateY(0) scale(1)';
     });
 });
+
+// Mobile menu functionality
+const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+mobileMenuToggle.addEventListener('click', function() {
+    this.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('#nav-menu a').forEach(link => {
+    link.addEventListener('click', function() {
+        mobileMenuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(e) {
+    if (!mobileMenuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+        mobileMenuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
+});
+
+// Handle window resize to reset mobile menu
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        mobileMenuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
+});
