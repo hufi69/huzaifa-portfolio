@@ -172,8 +172,8 @@ header ul li a:hover {
     position: relative;
     overflow: hidden;
     background: var(--bg-dark);
-    padding-top: 120px; /* Account for fixed header */
-    padding-bottom: 40px;
+    padding-top: 140px; /* Account for fixed header */
+    padding-bottom: 60px;
 }
 
 /* Background effects */
@@ -215,7 +215,7 @@ header ul li a:hover {
     margin-bottom: 2rem;
     position: relative;
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .profile-pic {
@@ -635,8 +635,12 @@ footer {
 }
 
 .experience-summary {
-    text-align: center;
+    text-align: center !important;
     margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .total-experience {
@@ -648,6 +652,7 @@ footer {
     border-radius: 50px;
     display: inline-block;
     border: 2px solid rgba(185, 253, 80, 0.3);
+    text-align: center;
 }
 
 .experience-item {
